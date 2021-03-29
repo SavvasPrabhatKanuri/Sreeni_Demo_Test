@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services_Operations_Event_Validation</fullName>
+    <active>true</active>
+    <description>Events with Services Operation/Services Operations type should only be editable by users with ICOM Professional Services Operations</description>
+    <errorConditionFormula>AND(NOT(ISNEW()), RecordType.DeveloperName = &apos;Services_Operation&apos;,
+$Profile.Name &lt;&gt;&apos;ICOM Professional Services Operations&apos;,
+$Profile.Name &lt;&gt;&apos;System Administrator&apos;)</errorConditionFormula>
+    <errorMessage>You do not have necessary access to Update this record</errorMessage>
+</ValidationRule>
