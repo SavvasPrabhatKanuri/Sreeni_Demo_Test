@@ -2,11 +2,12 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>Kimble_Scheduling_Request__c.Customer_Contact_Title__c</members>
+        <members>Kimble_Scheduling_Request__c.Related_to_Pilot__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Event.Services_Operations_Event_Validation</members>
         <name>ValidationRule</name>
     </types>
-    <version>50.0</version>
+    <version>51.0</version>
 </Package>
